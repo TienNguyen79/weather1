@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url(./img/cold.png) no-repeat center/cover;
+}
+
+#weather{
+    width: 350px;
+    border-radius: 10px;
+    padding: 30px 20px;
+    background: white;
+    background: url(./img/cold.png) no-repeat center/cover;
+}
+.hot{
+    background: linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url(./img/hot.png) no-repeat center/cover;
+
+}
+.hot #weather{
+    background: url(./img/hot.png) no-repeat center/cover;
+
+}
+.cool{
+    background: linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url(./img/cool.jpeg) no-repeat center/cover;
+
+}
+.cool #weather{
+    background: url(./img/cool.jpeg) no-repeat center/cover;
+
+}
+.warm{
+    background: linear-gradient(to top,rgba(0,0,0,0.7),rgba(0,0,0,0.1)), url(./img/warm.jpeg) no-repeat center/cover;
+
+}
+.warm #weather{
+    background: url(./img/warm.jpeg) no-repeat center/cover;
+
+}
+
+.search{
+    width: 100%;
+    padding: 8px 8px;
+    font-size: 17px;
+    border-bottom-left-radius: 14px;
+    border-top-right-radius: 14px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 2px #666;
+    margin-bottom: 30px;
+    transition: all 0.3s linear;
+}
+.search:focus{
+    border-radius: 15px 0 15px 0;
+    transition: all 0.3s linear;
+}
+.content{
+    color: #fff;
+}
+.capital{
+    text-align: center;
+    font-size: 34px;
+    padding-bottom: 12px;
+}
+.time{
+    text-align: center;
+}
+.temperature{
+    text-align: center;
+    background-color: rgba(255,255,255,0.4);
+    padding: 28px;
+    border-radius: 10px;
+    margin: 20px 0px;
+    font-size: 37px;
+    font-weight: 900;
+    box-shadow: 1px 1px 4px #ccc;
+    width: 100%;
+    text-shadow: 0px 1px 2px #666;
+}
+.value{
+    text-align: center;
+}
+.short-desc{
+    text-align: center;
+    font-size: 34px;
+    font-weight: 800;
+
+}
+.more-desc{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+.visibility{
+
+}
+.wind{
+
+}
+.cloud{
+
+}
+.hide{
+    visibility: hidden;
+}
